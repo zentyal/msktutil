@@ -23,6 +23,7 @@ endif
 
 build:
 	$(checkdir)
+	autoreconf
 	./configure --prefix=/usr
 	$(MAKE) CC="$(CC)" CFLAGS="$(CFLAGS)"
 	touch build
