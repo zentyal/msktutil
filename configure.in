@@ -121,7 +121,7 @@ fi
 
 # look for resolver functions
 # see if ns_initparse is simply in libc or libresolv
-AC_SEARCH_LIBS([ns_initparse], [resolv], AC_DEFINE(HAVE_NS_INITPARSE,1) , [
+AC_SEARCH_LIBS([ns_initparse], [resolv], AC_DEFINE([HAVE_NS_INITPARSE], [], [Description]), [
 	# On Linux it actually is in libresolv but prefixed with __ when
 	# linking dynamically. This is taken care of by actually including the
 	# right headers and trying again.
@@ -146,7 +146,7 @@ AC_SEARCH_LIBS([ns_initparse], [resolv], AC_DEFINE(HAVE_NS_INITPARSE,1) , [
 			]],[[
 	ns_initparse(0, 0, 0);
 			]])],
-			[ AC_DEFINE(HAVE_NS_INITPARSE,1)
+			[AC_DEFINE([HAVE_NS_INITPARSE], [], [Description])
 			AC_MSG_RESULT([yes])], [
 			# glibc versions prior to 2.9 include ns_initparse in
 			# libresolve but do not export it. Try to circumvent
@@ -161,7 +161,7 @@ AC_SEARCH_LIBS([ns_initparse], [resolv], AC_DEFINE(HAVE_NS_INITPARSE,1) , [
 				]],[[
 	ns_initparse(0, 0, 0);
 				]])],
-				[AC_DEFINE(HAVE_NS_INITPARSE,1)
+				[AC_DEFINE([HAVE_NS_INITPARSE], [], [Description])
 				AC_MSG_RESULT([yes])],
 				[LIBS="$saved_LIBS"
 				AC_MSG_RESULT([no])])])])])
@@ -176,7 +176,7 @@ AC_LINK_IFELSE([AC_LANG_PROGRAM([[
 	res_search(0, 0, 0, 0, 0);
 	]])],
 	[
-	AC_DEFINE(HAVE_RES_SEARCH, 1)
+	Use AC_DEFINE([HAVE_RES_SEARCH], [], [Description])
 	AC_MSG_RESULT([yes])],
 	AC_MSG_RESULT([no]))
 

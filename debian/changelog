@@ -4,6 +4,7 @@ msktutil (0.5-1) UNRELEASED; urgency=low
   * Force heimdal kerberos dependencies.
   * Add autoconf and automake to build dependencies.
   * Update debian/rules to generate configure script
+  * Fix some autoconf warnings
 
  -- Samuel Cabrero <scabrero@zentyal.com>  Wed, 23 Oct 2013 11:18:27 +0200
 
