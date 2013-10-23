@@ -1,6 +1,7 @@
 msktutil (0.5-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Force heimdal kerberos dependencies.
 
  -- Samuel Cabrero <scabrero@zentyal.com>  Wed, 23 Oct 2013 11:18:27 +0200
 

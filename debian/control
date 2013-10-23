@@ -7,7 +7,7 @@ Standards-Version: 3.6.2
 
 Package: msktutil
 Architecture: any
-Depends: ${shlibs:Depends}, libsasl2-modules-gssapi-mit | libsasl2-gssapi-mit | libsasl2-modules-gssapi-heimdal
+Depends: ${shlibs:Depends}, libsasl2-modules-gssapi-heimdal
 Description: A program for interoperability with Active Directory
  that can:
  - Create a computer account in Active Directory
