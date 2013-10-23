@@ -1,4 +1,4 @@
-msktutil (0.5-1) UNRELEASED; urgency=low
+msktutil (0.5-1) precise; urgency=low
 
   * New upstream release.
   * Force heimdal kerberos dependencies.
@@ -6,7 +6,7 @@ msktutil (0.5-1) UNRELEASED; urgency=low
   * Update debian/rules to generate configure script
   * Fix some autoconf warnings
 
- -- Samuel Cabrero <scabrero@zentyal.com>  Wed, 23 Oct 2013 11:18:27 +0200
+ -- Samuel Cabrero <scabrero@zentyal.com>  Wed, 23 Oct 2013 12:11:27 +0200
 
 msktutil (0.4.1-1) unstable; urgency=low
 
